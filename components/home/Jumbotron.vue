@@ -8,6 +8,7 @@
           <div
             class="
               offset-xl-3
+              jumbo-text
               col-xl-6
               offset-lg-2
               col-lg-8 col-md-12 col-sm-12
@@ -18,8 +19,8 @@
               & <strong>Berkualitas?</strong>
             </h1>
             <p>
-              Softy Pinko is a professional Bootstrap 4.0 theme designed by
-              Template Mo for your company at absolutely free of charge
+              Temukan laptop impianmu di website kami yang terpercaya dengan
+              penawaran terbaik untukmu
             </p>
             <a href="#features" class="main-button-slider">Hubungi kami</a>
           </div>
@@ -35,4 +36,14 @@
 export default {};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.jumbo-text {
+  p {
+    font-size: 18px;
+  }
+
+  a {
+    font-weight: 700;
+  }
+}
+</style>

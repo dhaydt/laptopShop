@@ -14,13 +14,13 @@
               <!-- ***** Menu Start ***** -->
               <ul class="nav">
                 <li><a href="#welcome" class="active">Home</a></li>
-                <li><a href="#features">About</a></li>
-                <li><a href="#work-process">Work Process</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#features">Deskripsi</a></li>
+                <li><a href="#work-process">Katalog</a></li>
                 <!-- <li><a href="#pricing-plans">Pricing Tables</a></li> -->
-                <li><a href="#blog">Products</a></li>
+                <li><a href="#blog">Available</a></li>
+                <li><a href="#testimonials">Testimoni</a></li>
                 <li><a href="#contact-us">Contact Us</a></li>
-                <li><nuxt-link to="/admin">Panel</nuxt-link></li>
+                <li><nuxt-link to="/login">Panel</nuxt-link></li>
               </ul>
               <a class="menu-trigger">
                 <span>Menu</span>

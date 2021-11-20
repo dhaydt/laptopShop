@@ -52,7 +52,9 @@
             "
           >
             <div class="left-heading">
-              <h2 class="section-title">Let’s discuss about you project</h2>
+              <h2 class="section-title">
+                Mari diskusikan kebutuhan laptop anda
+              </h2>
             </div>
             <div class="left-text">
               <p>
@@ -85,7 +87,7 @@
           >
             <div class="left-heading">
               <h2 class="section-title">
-                We can help you to grow your business
+                Kami memiliki laptop terbaik untuk mengembangkan bisnis anda
               </h2>
             </div>
             <div class="left-text">

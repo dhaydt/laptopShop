@@ -79,10 +79,14 @@ router.post("/login", (req, res, next) => {
                 }
               );
 
-              return res.status(200).send({
-                msg: "Logged in!",
-                token,
-                user: result[0],
+              return res.json({
+                user: {
+                  loggedIn: true,
+                  id: result[0].id,
+                  name: result[0].name,
+                  email: result[0].email,
+                  token: token,
+                },
               });
             } else {
               return res.status(401).send({
@@ -197,7 +201,7 @@ router.get("/users", (req, res) => {
     } else {
       //render ke view posts index
       return res.status(200).send({
-        data: rows, // <-- data posts
+        user: rows[0], // <-- data posts
       });
     }
   });
