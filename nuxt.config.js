@@ -67,6 +67,7 @@ export default {
     "@nuxtjs/toast",
     "@nuxtjs/sitemap",
     "@nuxtjs/google-analytics",
+    "nuxt-material-design-icons",
   ],
 
   sitemap: {
@@ -113,12 +114,12 @@ export default {
     login: "/?login=1",
     logout: "/",
     user: "/profile",
-    callback: "/",
+    // callback: "/",
   },
 
   toast: {
-    position: "top-right",
-    duration: 2000,
+    position: "top-center",
+    duration: 3000,
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

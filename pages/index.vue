@@ -24,7 +24,7 @@
 <script>
 import Contact from "../components/home/Contact";
 import Counter from "../components/home/Counter";
-import Process from "../components/home/Process";
+import Process from "../components/home/Katalog";
 import Testimoni from "../components/home/Testimoni";
 import Products from "../components/home/Products";
 import Footer from "../components/home/Footer";
