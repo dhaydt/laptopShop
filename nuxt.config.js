@@ -1,15 +1,20 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "laptop",
+    titleTemlapet: `%s -` + "Laptop Second",
+    title: "Laptop Seken" || "",
     htmlAttrs: {
       lang: "en",
     },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "Laptop Second" },
-      { name: "format-detection", content: "telephone=no" },
+      {
+        hid: "description",
+        name: "description",
+        content: process.env.npm_package_description || "",
+      },
+      { name: "format-detection", content: "laptop bekas" },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     script: [
@@ -54,13 +59,18 @@ export default {
   },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/bootstrap
     "bootstrap-vue/nuxt",
-    // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
     "@nuxtjs/auth-next",
     "@nuxtjs/toast",
+    "@nuxtjs/sitemap",
+    "@nuxtjs/google-analytics",
   ],
+
+  googleAnalytics: {
+    id: "213461095",
+    dev: false,
+  },
 
   auth: {
     // Options

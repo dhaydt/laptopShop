@@ -38,6 +38,24 @@ export default {
     };
   },
 
+  head() {
+    return {
+      title: "Home",
+      meta: [
+        {
+          hid: "Asus seken",
+          name: "Asus seken",
+          content: "Asus bekas dan asus seken dengan kualitas terbaik",
+        },
+        {
+          hid: "description",
+          name: "description",
+          content: process.env.npm_package_description,
+        },
+      ],
+    };
+  },
+
   mounted() {
     this.preloader = false;
   },
