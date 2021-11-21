@@ -53,6 +53,10 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: ["@nuxtjs/style-resources", "@nuxtjs/fontawesome"],
 
+  bootstrapVue: {
+    icons: false,
+  },
+
   fontawesome: {
     icons: {
       solid: true,
