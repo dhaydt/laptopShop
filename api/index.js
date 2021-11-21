@@ -27,17 +27,17 @@ app.use(users);
 app.use(laptop);
 
 // Start standalone server if directly running
-// module.exports = app;
+module.exports = app;
 
-// if (require.main === module) {
-//   const port = process.env.PORT || 3002;
-//   app.listen(port, () => {
-//     console.log(`API server listening on port ${port}`);
-//   });
-// }
+if (require.main === module) {
+  const port = process.env.PORT || 3002;
+  app.listen(port, () => {
+    console.log(`API server listening on port ${port}`);
+  });
+}
 
 // PRODUCTION MERGE WITH NUXT
-module.exports = {
-  path: "/api",
-  handler: app,
-};
+// module.exports = {
+//   path: "/api",
+//   handler: app,
+// };
