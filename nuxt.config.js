@@ -115,8 +115,8 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // baseUrl: `http://localhost:3000/api`,
-    baseUrl: `http://localhost:3002`,
-    // baseUrl: `https://api2.generasiunggul.com`,
+    // baseUrl: `http://localhost:3002`,
+    baseUrl: `https://api2.generasiunggul.com`,
   },
 
   loading: {
