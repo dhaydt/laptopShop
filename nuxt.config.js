@@ -1,3 +1,5 @@
+const main_base_URL = "https://backup.generasiunggul.com";
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -66,6 +68,13 @@ export default {
     "@nuxtjs/sitemap",
     "@nuxtjs/google-analytics",
   ],
+
+  sitemap: {
+    hostname: main_base_URL,
+  },
+  env: {
+    main_base_URL,
+  },
 
   googleAnalytics: {
     id: "UA-213461095-1",
