@@ -36,7 +36,7 @@ export default {
 
 <style lang="scss">
 .container-panel {
-  top: 31%;
+  top: 18%;
   left: 18%;
   width: 80%;
   position: absolute;
