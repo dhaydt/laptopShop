@@ -19,6 +19,7 @@ export default {
       { name: "format-detection", content: "laptop bekas" },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+
     script: [
       { src: "assets/js/jquery-2.1.0.min.js", body: true },
       // Supported since Nuxt 1.0
@@ -28,7 +29,14 @@ export default {
       { src: "assets/js/waypoints.min.js", body: true },
       { src: "assets/js/jquery.counterup.min.js", body: true },
       { src: "assets/js/imgfix.min.js", body: true },
-      { src: "assets/js/custom.js", body: true },
+      // { src: "assets/js/custom.js", body: true },
+      { src: "assets/admin/vendors/js/vendor.bundle.base.js", body: true },
+      {
+        src: "assets/admin/vendors/progressbar.js/progressbar.min.js",
+        body: true,
+      },
+      // { src: "assets/admin/js/hoverable-collapse.js", body: true },
+      { src: "assets/admin/js/template.js", body: true },
     ],
   },
 
@@ -39,6 +47,14 @@ export default {
     "~assets/css/bootstrap.min.css",
     "~assets/css/font-awesome.css",
     "~assets/css/templatemo-softy-pinko.css",
+    // Admin panel
+    "assets/admin/vendors/feather/feather.css",
+    "assets/admin/vendors/mdi/css/materialdesignicons.min.css",
+    "assets/admin/vendors/ti-icons/css/themify-icons.css",
+    "assets/admin/vendors/typicons/typicons.css",
+    "assets/admin/vendors/simple-line-icons/css/simple-line-icons.css",
+    "assets/admin/vendors/css/vendor.bundle.base.css",
+    "assets/admin/css/vertical-layout-light/style.css",
   ],
   styleResources: {
     scss: ["~assets/scss/main.scss", "~assets/scss/variable.scss"],
@@ -102,15 +118,6 @@ export default {
         tokenRequired: true,
         tokenType: "Bearer",
       },
-      // facebook: {
-      //   client_id: "your facebook app id",
-      //   userinfo_endpoint:
-      //     "https://graph.facebook.com/v2.12/me?fields=about,name,picture{url},email",
-      //   scope: ["public_profile", "email"],
-      // },
-      // google: {
-      //   client_id: "your gcloud oauth app client id",
-      // },
     },
   },
 
@@ -126,7 +133,6 @@ export default {
     duration: 3000,
   },
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // baseUrl: `http://localhost:3000/api`,
     // baseUrl: `http://localhost:3002`,
@@ -139,10 +145,16 @@ export default {
     background: "white",
     height: "4px",
   },
-  plugins: [{ src: "./plugins/install", ssr: true }],
+  plugins: [
+    { src: "~/plugins/jquery.js", ssr: false },
+    { src: "./plugins/install", ssr: true },
+  ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    babel: {
+      compact: true,
+    },
     loaders: {
       vue: {
         compilerOptions: {

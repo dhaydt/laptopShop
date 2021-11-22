@@ -53,6 +53,12 @@ export default {
           content: process.env.npm_package_description,
         },
       ],
+      script: [
+        {
+          body: true,
+          src: "assets/js/custom.js",
+        },
+      ],
     };
   },
 

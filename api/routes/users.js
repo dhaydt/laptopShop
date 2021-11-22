@@ -207,4 +207,19 @@ router.get("/users", (req, res) => {
   });
 });
 
+router.get("/usersAll", (req, res) => {
+  db.query("SELECT * FROM users ORDER BY id desc", (err, rows) => {
+    if (err) {
+      return res.status(400).send({
+        msg: err,
+      });
+    } else {
+      //render ke view posts index
+      return res.status(200).send({
+        user: rows, // <-- data posts
+      });
+    }
+  });
+});
+
 module.exports = router;
