@@ -22,13 +22,13 @@
         "
       >
         <div class="me-3">
-          <!-- <button
+          <button
             class="navbar-toggler navbar-toggler align-self-center"
             type="button"
             data-bs-toggle="minimize"
           >
             <span class="icon-menu"></span>
-          </button> -->
+          </button>
         </div>
         <div>
           <a class="navbar-brand brand-logo" href="/">
@@ -47,6 +47,7 @@
             </h1>
           </li>
         </ul>
+
         <ul class="navbar-nav ms-auto">
           <li class="nav-item dropdown">
             <a

@@ -25,6 +25,11 @@ export default {
       // Supported since Nuxt 1.0
       { src: "assets/js/popper.js", body: true },
       { src: "assets/js/bootstrap.min.js", body: true },
+      {
+        src: "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js",
+        body: true,
+      },
+
       { src: "assets/js/scrollreveal.min.js", body: true },
       { src: "assets/js/waypoints.min.js", body: true },
       { src: "assets/js/jquery.counterup.min.js", body: true },
